@@ -1,0 +1,295 @@
+/*------------
+estilo Global
+------------*/  
+@font-face {
+    font-family: superFuntime;
+    src: url(..//SuperFuntime.ttf);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: superFuntime;
+}
+
+
+
+body{
+    background-color:antiquewhite;
+    box-sizing: border-box;
+}
+
+/*------------
+estilo Encabezado
+------------*/
+header{
+    box-sizing: border-box;
+    background: rgb(49, 32, 1);
+    padding: 100px ;
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius:70%;
+    margin-left: 10px;
+    float: left;
+}
+h1{
+    box-sizing: border-box;
+    font-size: 70px;
+    padding: -20px;
+    text-align: center;
+    color: #000000;
+}
+
+/*------------
+estilo Contenido
+------------*/
+.contenido{
+    padding: 140px;
+    background-color: antiquewhite;
+    overflow: auto;
+}
+p{ 
+    padding: 80px;
+    font-size: 20px;
+}
+.Imagen{
+    width: 500px;
+    float: left;
+    padding: 40px;
+    position: relative;
+    border-radius: 70%;
+    margin-right: 10px;
+}
+.contenido ul li{
+    list-style-type: none;
+    padding-bottom: 20px ;
+}
+
+/*------------
+Estilo Menu de navegacion
+------------*/
+.Menu{
+    background: rgb(49, 32, 1);
+    list-style: none;
+    text-align: center;
+    padding: 20px;    
+}
+ul a{
+    width: 200px;
+    height: 30px;
+    padding: 10px 16px;
+    margin: 20px;
+    justify-content: space-around;
+    display: inline-block;
+    border-radius: 10px;
+    border: white 1px solid;
+    opacity: 0.6;
+    outline: none;
+    transition: 0.2s ease;
+    font-size: 15px;
+    background-color: rgb(69, 45, 1);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-color: white, solid;
+    
+}
+.LogoTienda{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+.Menu ul li {
+    display: inline-block;
+}
+ul li .activo{
+    color: rgb(69, 45, 1);
+    background-color: aliceblue;
+    transform: none;
+}
+ul li a:hover{
+    opacity: 1;
+}
+
+/*--------------
+estilo formulario basico
+-------------*/
+
+.form-basico {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(9, 9, 9, 0.1);
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+.entrada {
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.titulo{
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #010101;
+    font-size: 24px;
+    padding: 0 10px 15px;
+    border-bottom: 2px solid rgb(19, 19, 59);
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 30px;    
+}
+
+.form-basico .entrada label {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #0d0d0d;
+    width: 180px;
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 25px;
+}
+
+.form-basico input[type=text],
+.form-basico input[type=email], 
+.form-basico input[type=password]{
+    color: #0c0c0c;
+    box-sizing: border-box;
+    width: 240px;
+   padding: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.form-basico input[type=radio],
+.form-basico input[type=checkbox] {
+    box-shadow: none;
+    width: auto;
+}
+
+.form-basico input[type=checkbox] {
+    margin-top: 13px;
+}
+
+.form-basico select {
+    background-color: #ffffff;
+    color: #5f5f5f;
+    box-sizing: border-box;
+    max-width: 240px;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 8px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-basico textarea {
+    color: #000000;
+    box-sizing: border-box;
+    width: 240px;
+    height: 100px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    font: normal 13px sans-serif;
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    resize: vertical;
+}
+
+.opciones {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.opciones div {
+    margin-top: 10px;
+}
+
+.opciones label span {
+    margin-left: 8px;
+    color: #5f5f5f;
+    font-weight: normal;
+}
+
+.opciones input {
+    width: auto;
+}
+
+.form-basico input[type=button] {
+    display: block;
+    border-radius: 2px;
+    background-color: rgb(19, 19, 59);
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+/*	diseño responsivo*/
+
+@media (max-width: 600px) {
+    .form-basico {
+        padding: 30px;
+        max-width: 480px;
+    }
+    .form-basico .entrada {
+        max-width: 300px;
+        margin: 25px auto;
+        text-align: left;
+    }
+    .form-basico .titulo {
+        margin-bottom: 50px;
+    }
+    .form-basico .entrada>label span {
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+    .form-basico select {
+        width: 240px;
+    }
+    .form-basico input[type=checkbox] {
+        margin-top: 0;
+    }
+    .form-basico .opciones>div {
+        margin: 0 0 10px;
+    }
+    .form-basico button {
+        margin: 0;
+    }
+}
+
+/*--------------
+estilo formulario Validacion
+-------------*/
+
+form{
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+
+
+.form-control:valid + .icon  {
+    color: green;
+  }
+.form-control:invalid + .icon {
+    color: rgb(227, 14, 14);
+  }
+

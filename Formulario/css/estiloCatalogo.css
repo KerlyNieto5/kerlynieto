@@ -1,0 +1,135 @@
+/*------------
+estilo Global
+------------*/  
+@font-face {
+    font-family: superFuntime;
+    src: url(..//SuperFuntime.ttf);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: superFuntime;
+}
+
+
+
+body{
+    background-color: antiquewhite;
+}
+
+/*------------
+estilo Encabezado
+------------*/
+header{
+    box-sizing: border-box;
+    background: rgb(49, 32, 1);
+    padding: 100px ;
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius:70%;
+    margin-left: 10px;
+    float: left;
+}
+
+h1{
+    box-sizing: border-box;
+    font-size: 70px;
+    padding: -20px;
+    text-align: center;
+    
+}
+/*------------
+Estilo Menu de navegacion
+------------*/
+.Menu{
+    background: rgb(49, 32, 1);
+    list-style: none;
+    text-align: center;
+    padding: 20px;    
+}
+ul a{
+    width: 200px;
+    height: 30px;
+    padding: 10px 16px;
+    margin: 20px;
+    justify-content: space-around;
+    display: inline-block;
+    border-radius: 10px;
+    border: white 1px solid;
+    opacity: 0.6;
+    outline: none;
+    transition: 0.2s ease;
+    font-size: 15px;
+    background-color: rgb(69, 45, 1);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-color: white, solid;
+    
+}
+.LogoTienda{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+.Menu ul li {
+    display: inline-block;
+}
+ul li .activo{
+    color: rgb(69, 45, 1);
+    background-color: aliceblue;
+    transform: none;
+}
+ul li a:hover{
+    opacity: 1;
+}
+
+/*CATALOGO*/
+
+
+.Catalogo{
+    padding: 150px;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: auto;
+}
+h2{
+    width: 250px;
+    padding: 10px;
+    background-color: rgb(69, 45, 1);
+}
+.Imagen1{
+    width: 450px;
+    float: left;
+    padding: 50px;
+    position: relative;
+    border-radius: 10%;
+    margin-right: 50px;
+   
+}
+
+.listaCafe ul a{
+    width: 200px;
+    height: 30px;
+    padding: 10px 16px;
+    margin: 20px;
+    justify-content: space-around;
+    display: inline-block;
+    border-radius: 10px;
+    border: white 1px solid;
+    opacity: 0.6;
+    outline: none;
+    transition: 0.2s ease;
+    font-size: 15px;
+    background-color: rgb(69, 45, 1);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-color: white, solid;
+}
+
